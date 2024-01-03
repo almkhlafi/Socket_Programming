@@ -6,13 +6,10 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
-#define PORT 6500 // Replace with the FTP server port
+#define PORT 6500 
 
-// Implement your FTP logic for sending commands to the server
-void sendCommands(int clientSocket) {
-    // Implement FTP commands sending here
-    // This is where you'd send commands to the server
-}
+
+
 
 int main() {
     int clientSocket;
@@ -24,7 +21,7 @@ int main() {
     // Configure server address structure
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(PORT);
-    serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1"); //Loopback address
+    serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1"); //Loopback address I am useing local machine  
     memset(serverAddr.sin_zero, '\0', sizeof serverAddr.sin_zero);
 
     // Connect to server
