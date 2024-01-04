@@ -3,6 +3,8 @@
         "string.h": "c",
         "stdio.h": "c",
         "socket.h": "c",
-        "in.h": "c"
+        "in.h": "c",
+        "unistd.h": "c",
+        "stdlib.h": "c"
     }
 }
